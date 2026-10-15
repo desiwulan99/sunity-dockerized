@@ -189,11 +189,8 @@ Pastikan `DATABASE_URL` pada `.env` menunjuk ke database yang dapat diakses dari
 
 ## Kredit dan Penggunaan AI
 
-Proyek ini dikembangkan berdasarkan scaffold/repository Sunity API yang menjadi sumber awal proyek. Dockerfile, konfigurasi Docker Compose, dan dokumentasi Docker disiapkan sebagai bagian dari tugas containerization.
-
-AI digunakan sebagai alat bantu untuk memahami konfigurasi, menyusun langkah implementasi, dan membantu proses debugging. Konfigurasi akhir diuji secara lokal menggunakan Docker Compose.
-
-Sesuaikan keterangan kredit ini dengan sumber asli dan kontribusi yang benar-benar digunakan.
+AI Tool: ChatGPT (OpenAI)
+Purpose: AI digunakan sebagai alat bantu untuk memahami konfigurasi, menyusun langkah implementasi, dan membantu proses debugging. Konfigurasi akhir diuji secara lokal menggunakan Docker Compose.
 
 ## Lisensi
 

@@ -1,0 +1,70 @@
+{
+  "name": "sunity-api",
+  "version": "1.0.0",
+  "description": "Express API scaffold with Drizzle ORM",
+  "keywords": [],
+  "homepage": "https://github.com/sayyidrafeed/sunity-api#readme",
+  "bugs": {
+    "url": "https://github.com/sayyidrafeed/sunity-api/issues"
+  },
+  "license": "ISC",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayyidrafeed/sunity-api.git"
+  },
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "bun run --hot src/server.ts",
+    "dev:worker": "wrangler dev --env development",
+    "build": "tsc -p tsconfig.json",
+    "deploy": "wrangler deploy",
+    "start": "node dist/server.js",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:seed": "bun --env-file=.env src/scripts/index.ts",
+    "lint": "oxlint",
+    "lint:fix": "oxlint . --fix",
+    "format": "oxfmt --write",
+    "format:check": "oxfmt --check",
+    "fl": "bun run format && bun run lint",
+    "check": "tsgo --noEmit",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@asteasolutions/zod-to-openapi": "^8.5.0",
+    "@aws-sdk/client-s3": "^3.1048.0",
+    "@aws-sdk/s3-request-presigner": "^3.1045.0",
+    "@opentelemetry/api": "^1.9.1",
+    "@scalar/express-api-reference": "^0.9.8",
+    "better-auth": "^1.4.6",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "drizzle-orm": "^0.45.2",
+    "drizzle-zod": "^0.8.3",
+    "express": "^5.2.1",
+    "midtrans-client": "^1.4.3",
+    "postgres": "^3.4.7",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250409.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/midtrans-client": "^1.4.0",
+    "@types/node": "^25.5.0",
+    "@typescript/native-preview": "^7.0.0-dev.20260207.1",
+    "drizzle-kit": "^0.31.10",
+    "husky": "^9.1.7",
+    "oxfmt": "^0.43.0",
+    "oxlint": "^1.58.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "wrangler": "^4.28.0"
+  },
+  "engines": {
+    "bun": ">=1.1.0",
+    "node": ">=20"
+  }
+}

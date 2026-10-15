@@ -189,9 +189,5 @@ Pastikan `DATABASE_URL` pada `.env` menunjuk ke database yang dapat diakses dari
 
 ## Kredit dan Penggunaan AI
 
-AI Tool: ChatGPT (OpenAI)
+AI Tool: ChatGPT (OpenAI),
 Purpose: AI digunakan sebagai alat bantu untuk memahami konfigurasi, menyusun langkah implementasi, dan membantu proses debugging. Konfigurasi akhir diuji secara lokal menggunakan Docker Compose.
-
-## Lisensi
-
-Silakan merujuk ke file lisensi repository sumber apabila tersedia.
